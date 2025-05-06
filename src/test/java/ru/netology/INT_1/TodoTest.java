@@ -87,7 +87,6 @@ public class TodoTest {
             Task[] result = todos.search("встреча");
 
             assertNotNull(result);
-            assertEquals(3, result.length);
             assertArrayEquals(new Task[]{simple, meeting, epic}, result);
     }
     // Тест: ровно одна задача найдена
@@ -106,7 +105,6 @@ public class TodoTest {
             Task[] result = todos.search("дизайн");
 
             assertNotNull(result);
-            assertEquals(1, result.length);
             assertArrayEquals(new Task[]{epic}, result);
     }
      // Тест: ни одной задачи не найдено
@@ -128,6 +126,6 @@ public class TodoTest {
             assertEquals(0, result.length);
     }
 
- }
+}
 
 
